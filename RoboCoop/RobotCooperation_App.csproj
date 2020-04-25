@@ -79,6 +79,8 @@
     <Compile Include="RobotParticipation.Designer.cs">
       <DependentUpon>RobotParticipation.cs</DependentUpon>
     </Compile>
+    <Compile Include="SafeAccess.cs" />
+    <Compile Include="Task.cs" />
     <Compile Include="TaskPerRobot.cs">
       <SubType>Form</SubType>
     </Compile>

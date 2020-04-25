@@ -1,0 +1,15 @@
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\bin\Debug\RoboCoop.exe.config
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\bin\Debug\RoboCoop.exe
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\bin\Debug\RoboCoop.pdb
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RobotCooperation_App.csprojAssemblyReference.cache
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.AddTask.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.DeleteOrModifyTask.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.Form1.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.ListOfTasksForm.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.Properties.Resources.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.RobotParticipation.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.TaskPerRobot.resources
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RobotCooperation_App.csproj.GenerateResource.cache
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RobotCooperation_App.csproj.CoreCompileInputs.cache
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.exe
+C:\Users\chaou\Desktop\TP Mode connecté\RoboCoop\obj\Debug\RoboCoop.pdb
