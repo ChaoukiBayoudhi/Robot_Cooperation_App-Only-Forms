@@ -30,8 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rch_description = new System.Windows.Forms.RichTextBox();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_deleteorModify = new System.Windows.Forms.Button();
             this.cmb_status = new System.Windows.Forms.ComboBox();
             this.txt_duration = new System.Windows.Forms.TextBox();
             this.txt_name = new System.Windows.Forms.TextBox();
@@ -41,6 +39,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_deleteorModify = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,28 +75,6 @@
             this.rch_description.Size = new System.Drawing.Size(192, 79);
             this.rch_description.TabIndex = 12;
             this.rch_description.Text = "";
-            // 
-            // bt_cancel
-            // 
-            this.bt_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.Location = new System.Drawing.Point(449, 199);
-            this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_cancel.Name = "bt_cancel";
-            this.bt_cancel.Size = new System.Drawing.Size(102, 48);
-            this.bt_cancel.TabIndex = 11;
-            this.bt_cancel.Text = "Annuler";
-            this.bt_cancel.UseVisualStyleBackColor = true;
-            // 
-            // bt_deleteorModify
-            // 
-            this.bt_deleteorModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_deleteorModify.Location = new System.Drawing.Point(449, 63);
-            this.bt_deleteorModify.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_deleteorModify.Name = "bt_deleteorModify";
-            this.bt_deleteorModify.Size = new System.Drawing.Size(102, 48);
-            this.bt_deleteorModify.TabIndex = 10;
-            this.bt_deleteorModify.Text = "Supprimer";
-            this.bt_deleteorModify.UseVisualStyleBackColor = true;
             // 
             // cmb_status
             // 
@@ -134,6 +112,8 @@
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(192, 24);
             this.txt_code.TabIndex = 5;
+            this.txt_code.TextChanged += new System.EventHandler(this.txt_code_TextChanged);
+            this.txt_code.Leave += new System.EventHandler(this.txt_code_Leave);
             // 
             // label5
             // 
@@ -190,6 +170,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Code";
             // 
+            // bt_cancel
+            // 
+            this.bt_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cancel.Location = new System.Drawing.Point(449, 199);
+            this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_cancel.Name = "bt_cancel";
+            this.bt_cancel.Size = new System.Drawing.Size(102, 48);
+            this.bt_cancel.TabIndex = 11;
+            this.bt_cancel.Text = "Annuler";
+            this.bt_cancel.UseVisualStyleBackColor = true;
+            // 
+            // bt_deleteorModify
+            // 
+            this.bt_deleteorModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_deleteorModify.Location = new System.Drawing.Point(449, 63);
+            this.bt_deleteorModify.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_deleteorModify.Name = "bt_deleteorModify";
+            this.bt_deleteorModify.Size = new System.Drawing.Size(102, 48);
+            this.bt_deleteorModify.TabIndex = 10;
+            this.bt_deleteorModify.Text = "Supprimer";
+            this.bt_deleteorModify.UseVisualStyleBackColor = true;
+            this.bt_deleteorModify.Click += new System.EventHandler(this.bt_deleteorModify_Click);
+            // 
             // DeleteOrModifyTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +204,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DeleteOrModifyTask";
             this.Text = "Supprimer une tache";
+            this.Load += new System.EventHandler(this.DeleteOrModifyTask_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

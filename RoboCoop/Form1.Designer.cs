@@ -34,6 +34,7 @@
             this.suppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chercherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionTachesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.suppToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +44,6 @@
             this.statistiquesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.participationDesRobotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeTachesParRobotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chercherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.autreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -78,26 +78,32 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             // 
             // suppToolStripMenuItem
             // 
             this.suppToolStripMenuItem.Name = "suppToolStripMenuItem";
-            this.suppToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suppToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.suppToolStripMenuItem.Text = "Supprimer";
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
             // 
             // listerToolStripMenuItem
             // 
             this.listerToolStripMenuItem.Name = "listerToolStripMenuItem";
-            this.listerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listerToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.listerToolStripMenuItem.Text = "Lister";
+            // 
+            // chercherToolStripMenuItem1
+            // 
+            this.chercherToolStripMenuItem1.Name = "chercherToolStripMenuItem1";
+            this.chercherToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.chercherToolStripMenuItem1.Text = "Chercher";
             // 
             // gestionTachesToolStripMenuItem
             // 
@@ -114,35 +120,35 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
             // suppToolStripMenuItem1
             // 
             this.suppToolStripMenuItem1.Name = "suppToolStripMenuItem1";
-            this.suppToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.suppToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.suppToolStripMenuItem1.Text = "Supprimer";
             this.suppToolStripMenuItem1.Click += new System.EventHandler(this.suppToolStripMenuItem1_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.modifierToolStripMenuItem1.Text = "Modifier";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifierToolStripMenuItem1_Click);
             // 
             // listerToolStripMenuItem1
             // 
             this.listerToolStripMenuItem1.Name = "listerToolStripMenuItem1";
-            this.listerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listerToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.listerToolStripMenuItem1.Text = "Lister";
             this.listerToolStripMenuItem1.Click += new System.EventHandler(this.listerToolStripMenuItem1_Click);
             // 
             // chercherToolStripMenuItem
             // 
             this.chercherToolStripMenuItem.Name = "chercherToolStripMenuItem";
-            this.chercherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chercherToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.chercherToolStripMenuItem.Text = "Chercher";
             // 
             // statistiquesToolStripMenuItem
@@ -168,12 +174,6 @@
             this.nombreDeTachesParRobotToolStripMenuItem.Text = "Nombre de taches par robot";
             this.nombreDeTachesParRobotToolStripMenuItem.Click += new System.EventHandler(this.nombreDeTachesParRobotToolStripMenuItem_Click);
             // 
-            // chercherToolStripMenuItem1
-            // 
-            this.chercherToolStripMenuItem1.Name = "chercherToolStripMenuItem1";
-            this.chercherToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.chercherToolStripMenuItem1.Text = "Chercher";
-            // 
             // autreToolStripMenuItem
             // 
             this.autreToolStripMenuItem.Name = "autreToolStripMenuItem";
@@ -191,6 +191,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

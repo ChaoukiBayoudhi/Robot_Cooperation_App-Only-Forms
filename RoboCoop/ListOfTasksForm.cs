@@ -19,7 +19,8 @@ namespace RoboCoop
 
         private void ListOfTasksForm_Load(object sender, EventArgs e)
         {
-            
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Form1.DS.Tables["TaskTab"];
         }
     }
 }
